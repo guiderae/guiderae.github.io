@@ -1,0 +1,19 @@
+
+# NetBeans specific files
+/nbproject/private/
+/nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Common Editor backups
+*.bak
+*.tmp
+*.swp
