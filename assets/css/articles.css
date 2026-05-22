@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Raleway:wght@400;600;700&display=swap');
+
+:root {
+    --navy:      #1a2940;
+    --accent:    #1e6fa5;
+    --text:      #222;
+    --muted:     #555;
+    --rule:      #ddd;
+    --max-width: 860px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #fff;
+    color: var(--text);
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+
+.site-header {
+    background: var(--navy);
+    padding: 1.4rem 0;
+}
+
+.site-header .inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.site-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.site-name:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,0.85);
+}
+
+.site-tagline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ── Main content wrapper ───────────────────────────────────── */
+
+.content-wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2.75rem 2rem 4rem;
+}
+
+/* ── Page heading ───────────────────────────────────────────── */
+
+.page-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    padding-bottom: 0.65rem;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 1.75rem;
+}
+
+/* ── Intro text ─────────────────────────────────────────────── */
+
+.intro {
+    margin-bottom: 2.75rem;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+
+p {
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 0.6rem;
+}
+
+h3,
+.subheader {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 1.75rem 0 0.6rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text);
+}
+
+/* ── Article index entries ──────────────────────────────────── */
+
+.article-entry {
+    padding: 2.25rem 0;
+    overflow: hidden;
+}
+
+.article-entry h2 {
+    margin-bottom: 0.85rem;
+}
+
+.article-entry h2 a {
+    color: var(--accent);
+}
+
+.article-thumb {
+    float: left;
+    width: 220px;
+    max-width: 38%;
+    height: auto;
+    margin: 0.2rem 1.75rem 0.75rem 0;
+    border-radius: 2px;
+    display: block;
+}
+
+hr.article-divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+}
+
+/* ── Article page images ────────────────────────────────────── */
+
+.imageleft {
+    float: left;
+    max-width: 45%;
+    height: auto;
+    margin: 0.25rem 1.75rem 1rem 0;
+}
+
+.imageright {
+    float: right;
+    max-width: 45%;
+    height: auto;
+    margin: 0.25rem 0 1rem 1.75rem;
+}
+
+.container {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.textcontent {
+    /* No overflow:hidden here — text wraps naturally around floated images
+       and returns to the full left margin once it clears the float. */
+}
+
+/* ── Back link (article pages) ──────────────────────────────── */
+
+.back-link {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.back-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+
+footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    margin-top: 2rem;
+}
+
+/* ── Code blocks (replaces textarea snippets from JSP) ─────── */
+
+pre {
+    background: #f4f4f4;
+    border-left: 3px solid var(--navy);
+    padding: 0.9rem 1.25rem;
+    margin: 1.25rem 0;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ── Side-by-side image pairs ───────────────────────────────── */
+
+.image-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ── Math / equation lists ──────────────────────────────────── */
+
+.equation {
+    list-style: none;
+    padding: 0.5rem 0 0.5rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    margin: 0.75rem 0;
+}
+
+.equation li {
+    font-size: 0.95rem;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+/* ── Inline images within paragraph text ───────────────────── */
+
+.inline-img {
+    vertical-align: middle;
+}
+
+/* ── Standalone figure images inside article body ───────────── */
+
+.figure-img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ── Data tables ────────────────────────────────────────────── */
+
+table.data-table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+}
+
+table.data-table th,
+table.data-table td {
+    border: 1px solid var(--rule);
+    padding: 0.4rem 0.75rem;
+}
+
+table.data-table th {
+    background: var(--navy);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+table.data-table tr:nth-child(even) td {
+    background: #f8f8f8;
+}
+
+/* ── Note / info callout box ────────────────────────────────── */
+
+.note-box {
+    background: #f0f4f8;
+    border-left: 4px solid var(--accent);
+    padding: 0.75rem 1.1rem;
+    margin: 1.5rem 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* ── Simulator form (non-functional in static version) ──────── */
+
+.sim-form {
+    border: 2px solid var(--rule);
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.sim-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.sim-form select {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    .content-wrap {
+        padding: 1.75rem 1.25rem 3rem;
+    }
+
+    .article-thumb,
+    .imageleft,
+    .imageright {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}

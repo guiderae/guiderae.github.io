@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fibonacci Sequence &mdash; Eli's Science Corner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/articles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="inner">
+        <a href="index.html" class="site-name">Eli's Science Corner</a>
+        <span class="site-tagline">Science without the sensationalism</span>
+    </div>
+</header>
+
+<main class="content-wrap">
+
+    <a href="index.html" class="back-link">&laquo; Back to Science Home</a>
+    <h1 class="page-heading">The Fibonacci Sequence and the Golden Ratio</h1>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/sheldon1.png"
+             alt="Sheldon from The Big Bang Theory wearing a shirt with the Fibonacci spiral"
+             style="max-width: 400px;">
+        <img src="assets/images/science/fibonacci/spiral1.jpg"
+             alt="A Fibonacci spiral in nature"
+             style="max-width: 300px;">
+    </div>
+
+    <p>
+        That image on the shirt that Sheldon is wearing has a special meaning. Anyone that is familiar with
+        the Fibonacci Sequence knows immediately the significance of that spiral and how it is created. In
+        this article you too will know about this spiral, how it is created and some other interesting consequences
+        of the Fibonacci Sequence.
+    </p>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/fibonacciPortrait.jpg"
+             alt="Portrait of Leonardo Fibonacci — one of only two known portraits of him">
+        <p>
+            Since Leonardo lived 800 years ago, there are only maybe two portraits of him. All of the other images you
+            may find of him are just copies of this one. His name, Leonardo Pisano Bigollo has been morphed several
+            times. Back then names were constructed by adding the name of the province that a person came from. In
+            Leonardo's case, he was born in Pisa, hence the name "Pisano". His father was nicknamed "Bonaccio"
+            which means "good natured". In the early 1800's an Italian historian morphed the name into
+            Leonardo Fibonacci, which means son of Bonaccio. (Just like MacGregor means son of Gregor).
+        </p>
+        <p>
+            Whatever you want to call him, Leonardo Fibonacci or just Fibonacci was a major influence in bringing
+            the number system that we presently use to the west from India. Imagine trying to do calculations that involve
+            decimal places using a system that did not employ numerals and the place system. The concept of zero
+            launched western science into a huge era of discovery during the middle ages.
+        </p>
+    </div>
+
+    <div class="container">
+        <img class="imageright" src="assets/images/science/fibonacci/rabbits1.jpg"
+             alt="Illustration of rabbits used in Fibonacci's breeding problem"
+             style="max-width: 300px;">
+        <p>
+            Long before Fibonacci wrote his book, he solved a problem that involved rabbit breeding. He wanted to
+            calculate how many <b>rabbit pairs</b> he would have over time if he were to start with just two newborns.
+            He started with the following assumptions:
+        </p>
+        <ul>
+            <li>Start with two newborn rabbits, one male, one female.</li>
+            <li>The rabbits take one month to mature. After one month they are able to breed.</li>
+            <li>Each female rabbit gives birth to one male and one female every month after maturity.</li>
+            <li>Over the months of the experiment all rabbits survive.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/rabbitcount1.png"
+             alt="Diagram showing rabbit pair counts over four months: 1, 1, 2, 3, 5"
+             style="max-width: 400px;">
+        <p>
+            The image on the left shows what happens during only a four-month period. We start with two newborn
+            rabbits (<b>one pair</b>). One is brown with white ears and the other is white with one gray and one white ear.
+        </p>
+        <ol>
+            <li>After one month we still have <b>one</b> pair, but they are now mature and can mate. It takes one month to germinate.</li>
+            <li>After two months we still have the original pair, but they have produced another pair. There are now <b>two pairs</b>. The newborns will take a month to mature, but the original pair will mate again.</li>
+            <li>After three months, the original pair that mated in month two give birth to another pair. There are now <b>three pairs</b>. The first set of offspring are now mature and mate.</li>
+            <li>After four months, there are two more newborn pairs. There are now <b>five pairs.</b></li>
+        </ol>
+        <p>
+            If the rabbits were to continue this pattern, the number of pairs at each month could be written as:
+            1 1 2 3 5 8 13 21 34&hellip;&nbsp; In mathematics any list of increasing numbers is called a <b>sequence</b>. A particular
+            number in the sequence is called an <b>element</b> of the sequence. Now there is a pattern to the
+            elements in the sequence. For example, choose any element in the sequence.
+            Say we choose the element whose value is 21. Then the element whose value is 21 is the <b>sum of the two previous elements in the sequence</b>.
+            That is, 21 = 13 + 8. Try the element whose value is 34. We see that 34 = 21 + 13. This
+            property is true for any element in the sequence except for the first and second elements.
+        </p>
+        <p>If we were to develop a mathematical shorthand notation for this sequence, we would say:</p>
+        <p>
+            Let the notation F<sub>n</sub> represent the nth element in the sequence. We define the first two
+            elements by F<sub>1</sub> = 1 and F<sub>2</sub> = 1. Then the nth element can be calculated from the
+            previous two elements by the formula: F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>.
+        </p>
+        <p>
+            It may be easier to understand the notation if we were to put the first nine elements of the sequence
+            in tabular form:<br><br>
+            F<sub>1</sub> =  1<br>
+            F<sub>2</sub> =  1<br>
+            F<sub>3</sub> =  2<br>
+            F<sub>4</sub> =  3<br>
+            F<sub>5</sub> =  5<br>
+            F<sub>6</sub> =  8<br>
+            F<sub>7</sub> = 13<br>
+            F<sub>8</sub> = 21<br>
+            F<sub>9</sub> = 34<br><br>
+
+            So, for example, if we wanted to calculate F<sub>10</sub>, the 10th element in the sequence, we would use our formula
+            F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub> where n = 10:<br>
+            F<sub>10</sub> = F<sub>9</sub> + F<sub>8</sub> = 34 + 21 = 55
+        </p>
+        <p>
+            Just to finish off the rabbit experiment, if you are interested in how many pairs there would be after
+            one year, two years, or three years:<br>
+            F<sub>12</sub> = 144<br>
+            F<sub>24</sub> = 46,368<br>
+            F<sub>36</sub> = 14,930,352
+        </p>
+    </div>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/fibonaccijoke2.png"
+             alt="A humorous sign about the Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13..."
+             style="max-width: 300px;">
+        <p>For future reference, the above special sequence has since been called the <b>Fibonacci Sequence</b>.</p>
+    </div>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/fibratio1.png"
+             alt="Table showing Fibonacci numbers and the ratio of consecutive elements — converging to 1.61803"
+             style="max-width: 300px;">
+        <p>
+            Now that we have established what a Fibonacci Sequence is, let's look at some properties and consequences of
+            this discovery.
+        </p>
+        <p>
+            Mathematicians like to find patterns in things. The first pattern to spot involves the ratio of two
+            consecutive elements in the Fibonacci Sequence. If we divide each F<sub>n</sub> element value by F<sub>n-1</sub>
+            value we get the table on the left. The first column labeled N is the number of the element in the sequence.
+            The second column is the value of the nth number in the sequence (the Fibonacci number), and the third column
+            labeled F<sub>n</sub> / F<sub>n-1</sub> is the ratio of two consecutive Fibonacci numbers rounded to 5 decimal places.
+        </p>
+        <p>
+            So:<br>
+            F<sub>2</sub> / F<sub>1</sub> = 1 / 1 = 1<br>
+            F<sub>3</sub> / F<sub>2</sub> = 2 / 1 = 2<br>
+            F<sub>4</sub> / F<sub>3</sub> = 3 / 2 = 1.5<br>
+            F<sub>5</sub> / F<sub>4</sub> = 5 / 3 = 1.66667
+        </p>
+        <p>
+            And if we skip down to the 16th and 15th elements:<br>
+            F<sub>16</sub> / F<sub>15</sub> = 1.61803<br>
+            And after that, all the ratios are the same, namely 1.61803.
+        </p>
+        <p>
+            The calculations of the Fibonacci numbers together with their ratios were done on a simple spreadsheet.
+            You can create your own spreadsheet and play with the numbers. You can construct the spreadsheet by
+            creating three simple formulas, one for each column:
+        </p>
+        <ul>
+            <li>In the first row enter the headings for three columns: "N" in the first column, "VALUE" in the
+                second column, and "F<sub>n</sub> / F<sub>n-1</sub>" in the third column.</li>
+            <li>In the first column labeled N, we just want the numbers 1, 2, 3, 4, &hellip; Enter a 1 in the second row,
+                first column and in the third row enter <b>=sum(A2+1)</b>. Then copy that formula for the rest of the rows.</li>
+            <li>The second column calculates the Fibonacci numbers.
+                In the second and third rows of the second column enter a 1. In the fourth row enter the
+                formula <b>=sum(B3+B2)</b>. Then copy that formula for the rest of the rows.</li>
+            <li>The third column calculates the ratio of consecutive Fibonacci numbers. In the third row, third column,
+                enter the formula <b>=B3/B2</b>. Then copy that formula for the rest of the rows.</li>
+        </ul>
+        <p>
+            Now try an interesting experiment. Change the first two Fibonacci numbers from 1 and 1 to any two non-negative
+            numbers where the second number is greater than the first number. Look at the ratios. What value do they tend to?
+        </p>
+    </div>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/fibratio2.png"
+             alt="Spreadsheet run 1 — different starting values, ratio converges to 1.61803" style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/fibratio3.png"
+             alt="Spreadsheet run 2 — different starting values, ratio converges to 1.61803" style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/fibratio4.png"
+             alt="Spreadsheet run 3 — different starting values, ratio converges to 1.61803" style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/fibratio5.png"
+             alt="Spreadsheet run 4 — different starting values, ratio converges to 1.61803" style="max-width: 300px;">
+    </div>
+
+    <p>
+        Above are 4 runs with different starting values. As you can see, there is nothing special about
+        starting the sequence with 1 and 1. All the sequences eventually end up with the same ratio: 1.61803.
+        So we can conclude that the "Golden Ratio" is really determined by the algorithm of adding the two previous
+        numbers in order to get the next one.
+    </p>
+    <p>
+        I stated previously that the "Golden Ratio" calculated in the spreadsheets was rounded off to five decimal
+        places. Is there a more compact way to express this number? Yes, if you are willing to do some 7th
+        grade math. If you are not capable of following 7th grade math, then skip to the next section.
+    </p>
+
+    <h3>Caution &mdash; 7th Grade Math Ahead!</h3>
+
+    <p style="text-decoration: underline overline wavy red;">
+        Upon entering the following section, you may experience one or more of the following symptoms: dry mouth,
+        nausea, vomiting, diarrhea, shortness of breath, sweating or wet palms, loss of self confidence, suicide attempts,
+        or erectile dysfunction. If you experience any of these side effects, consult your 7th grade math teacher immediately.
+    </p>
+
+    <p>
+        For those of you that are still with me, let's do some analysis on the algorithm that forms the basis of
+        the Fibonacci sequence. We started with the assumption of how an element in the sequence is found by
+        taking the sum of the previous two elements. That assumption was written mathematically as:<br><br>
+        F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub><br><br>
+
+        And we want to find the ratio of F<sub>n</sub> / F<sub>n-1</sub>.<br><br>
+
+        Let's call R the ratio of any two consecutive elements in the sequence, as long as the larger
+        of the two numbers is in the numerator.<br><br>
+        So R = F<sub>n</sub> / F<sub>n-1</sub><br><br>
+
+        Let's use our assumption equation for the calculation of R. In the numerator substitute for F<sub>n</sub>:<br><br>
+
+        R = (F<sub>n-1</sub> + F<sub>n-2</sub>) / F<sub>n-1</sub>&nbsp;&nbsp; or<br><br>
+
+        R = 1 + F<sub>n-2</sub> / F<sub>n-1</sub><br><br>
+
+        Notice that the second term, F<sub>n-2</sub> / F<sub>n-1</sub> is just 1 / R<br><br>
+
+        So our calculation for R now looks like:<br><br>
+
+        R = 1 + 1/R<br><br>
+
+        Multiply both sides of this equation by R:<br><br>
+
+        R<sup>2</sup> = R + 1<br><br>
+
+        Bring all terms to the left-hand side:<br><br>
+
+        R<sup>2</sup> &minus; R &minus; 1 = 0&nbsp;&nbsp;&nbsp;&nbsp;(This is a quadratic equation)<br><br>
+
+        The solutions of the quadratic equation for R are:<br><br>
+
+        [&minus;(&minus;1) &plusmn; &radic;<span style="text-decoration:overline;">&nbsp;(&minus;1)<sup>2</sup> &minus; 4&times;1&times;(&minus;1)&nbsp;</span>] / (2&times;1)<br><br>
+        = [1 &plusmn; &radic;<span style="text-decoration:overline;">&nbsp;1 + 4&nbsp;</span>] / 2<br><br>
+        = [1 &plusmn; &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2<br><br>
+
+        We can throw out the minus solution because we only want positive solutions. So we have a compact
+        way of expressing the "Golden Ratio":<br><br>
+
+        <b>R = [1 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2</b><br><br>
+
+        You can confirm using a calculator that this expression to 5 decimal places is indeed 1.61803. Keep that
+        expression in mind as it will appear at times unexpectedly.
+    </p>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/rectangle1.png"
+             alt="Unit square with a line S drawn from the midpoint of the bottom side to the upper-right corner"
+             style="max-width: 300px;">
+        <p>
+            We were able to compute the value of the Golden Ratio using Fibonacci elements. Now we will step away from
+            rabbits and even from the Fibonacci sequence for a moment and find another completely geometrical way to
+            compute the Golden Ratio.
+        </p>
+        <p>
+            In the image on the left, start with a unit square (a square whose sides all measure 1 unit). Find
+            the middle of the bottom side and put a point there. This point divides the bottom side of the square
+            into two equal line segments, each of length 1/2 unit.<br><br>
+            From that middle point on the bottom side of the square draw a line up to the upper right corner of the
+            square. Label the line with the name S. What is the length of that line S?
+        </p>
+        <p>
+            Notice that the base of the square, the right side of the square, and the line S form a right triangle where
+            S is the hypotenuse. You know from geometry that the length of the hypotenuse is the square root of the
+            sum of the squares of the sides. So:<br><br>
+
+            S = &radic;<span style="text-decoration:overline;">&nbsp;(1/2)<sup>2</sup> + 1<sup>2</sup>&nbsp;</span><br>
+            &nbsp;&nbsp;&nbsp;= &radic;<span style="text-decoration:overline;">&nbsp;1/4 + 1&nbsp;</span><br>
+            &nbsp;&nbsp;&nbsp;= &radic;<span style="text-decoration:overline;">&nbsp;5/4&nbsp;</span><br>
+            &nbsp;&nbsp;&nbsp;= &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span> / 2
+        </p>
+        <p>Interesting &mdash; there is that square root of 5 again. But that is not the Golden Ratio.</p>
+    </div>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/rectangle2.png"
+             alt="Unit square with line S used as the radius of a circle, extending the base to intersect the circle"
+             style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/rectangle3.png"
+             alt="The line L from the lower-left corner to where the circle intersects the extended base equals the Golden Ratio"
+             style="max-width: 300px;">
+    </div>
+
+    <p>
+        Using the line S as a radius of a circle and the point on the bottom side of the square as a center, draw
+        a circle. Extend the base of the square so that it intersects the circle. (Image upper left)
+    </p>
+    <p>
+        Now here is a thrill of discovery:
+        Find the length of the line L that runs from the lower left corner of the square out to where the circle intersects
+        the extended base of the square. (Image upper right)
+    </p>
+    <p>
+        L = 1/2 + S<br>
+        &nbsp;&nbsp;= 1/2 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span> / 2<br>
+        <b>&nbsp;&nbsp;= [1 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2</b>
+    </p>
+    <p>
+        If your memory is short, that is unfortunate. You missed the thrill. If you go back to the calculation
+        of the Fibonacci ratio, you see that this result above is <b>exactly the same value</b>. We have computed the
+        Golden Ratio in a completely different and independent way! Now you may have an idea why the number
+        <b>[1 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2</b> is called
+        the <i>Golden</i> Ratio.
+    </p>
+    <p>
+        Keep in mind that this geometric calculation has been around for over 2,500 years at least in the west. Who
+        knows how long ago it was developed in India. We (the west) not only borrowed the ideas of numeric symbols 0&ndash;9 and
+        the decimal place system, but we also borrowed the way to calculate the magnitude of the hypotenuse of a right triangle.
+    </p>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/rectangle4.png"
+             alt="A Golden Rectangle — 1 unit tall and φ units wide, where φ = [1 + √5] / 2 ≈ 1.618"
+             style="max-width: 300px;">
+        <p>
+            If we were to extend the width of our original 1&times;1 square so that the new width is
+            [1 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2 units wide, we have
+            what is called a <b>Golden Rectangle</b>. This term is fitting because the ratio of the longer side to the
+            smaller side is the Golden Ratio.
+        </p>
+        <p>To demonstrate how revered is the Golden Rectangle and Golden Ratio, we only have to look at architecture.</p>
+    </div>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/giza1.png"
+             alt="Satellite image of the three pyramids at Giza" style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/giza2.gif"
+             alt="Diagram showing the three Giza pyramids fitting on the corners of two Golden Rectangles" style="max-width: 300px;">
+    </div>
+
+    <p>
+        The images above show the layouts of the three pyramids at Giza. The image above left is the satellite image
+        of the pyramids and the image above right shows the locations of the three pyramids as they fit on the
+        corners of <i>two Golden Rectangles</i>. Since these pyramids were built over 4,500 years ago, this is a remarkable coincidence — or deliberate design.
+    </p>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/greatpyramid1.jpg"
+             alt="The Great Pyramid of Giza — 146.7 m tall with a 230.34 m square base" style="max-width: 300px;">
+        <img src="assets/images/science/fibonacci/greatpyramid2.png"
+             alt="Schematic of the Great Pyramid showing the three key dimensions related to the Golden Ratio φ" style="max-width: 300px;">
+    </div>
+
+    <p>
+        The image above left shows the Great Pyramid of Egypt. The height of the pyramid is 146.7 meters. Its
+        base, a square, measures 230.34 meters per side. Keep in mind that these measurements are of the pyramid infrastructure. The
+        outer cover of the pyramid has been weathered away so that the actual dimensions of the finished product
+        would be slightly larger. The image above right shows a schematic of three important dimensions of the pyramid. In the
+        image, the Golden Ratio is shown by the symbol &Phi;. The three important dimensions are:
+    </p>
+    <ul>
+        <li>One half of the square base of the pyramid, which is 1 unit.</li>
+        <li>The height of the pyramid, which is denoted by &radic;<span style="text-decoration:overline;">&nbsp;&Phi;&nbsp;</span>.</li>
+        <li>The distance from the midpoint of one of the base's sides up to the very top of the pyramid, which is denoted by &Phi;.</li>
+    </ul>
+    <p>
+        Let's use the measured dimensions of the height and base of the pyramid to calculate the ratio of the square root of
+        the height to 1/2 of the base size:<br><br>
+
+        &radic;<span style="text-decoration:overline;">&nbsp;146.5&nbsp;</span> / (230.4 / 2)<br>
+        = 1.274<br>
+        = &radic;<span style="text-decoration:overline;">&nbsp;&Phi;&nbsp;</span><br><br>
+
+        So &Phi; = 1.617<br><br>
+
+        This ratio is very close to that of the Golden Ratio that we calculated before (1.618). This calculation is within 0.06%
+        of the Golden Ratio. Since there are no written records of the building plans for the pyramids, we do not know for sure that
+        they actually planned the buildings with the Golden Ratio in mind. But it would be an unlikely coincidence that these dimensions
+        fit the Golden Ratio.
+    </p>
+    <p>
+        If you would like to reconstruct your own Golden Ratio based pyramid,
+        <a href="https://www.goldennumber.net/wp-content/uploads/2012/08/great-pyramid-golden-triangle-template.pdf" target="_blank">
+            use this link</a> and print out the template. Then just fold along the lines.
+    </p>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/gizafactoids1.png"
+             alt="Collection of numerical coincidences found in the Great Pyramid's dimensions"
+             style="max-width: 600px;">
+        <p>
+            If you like facts done to the extreme, read some of these other calculations shown on the image left. Do not forget here
+            that some of these corresponding calculations are coincidences, not purposeful designs of the pyramids.
+        </p>
+        <p>
+            Incidentally if you like these kinds of coincidence calculations try the collection of
+            <a href="https://www.independent.co.uk/life-style/history/42-the-answer-to-life-the-universe-and-everything-2205734.html" target="_blank">
+                facts about the number 42</a> that started with a
+            simple comment in the film <i>The Hitchhiker's Guide to the Galaxy</i>. The author, Douglas Adams wrote:
+            "<i>The answer to the ultimate question of life, the universe and everything is 42.</i>"
+        </p>
+    </div>
+
+    <p>
+        It should be apparent that since the Egyptians were using the Golden Ratio at least 3,500 years before Fibonacci did his work
+        on rabbits, the Golden Ratio that his sequence produces is just another angle by which this seemingly universal number can be
+        arrived at. What you should take away from learning about the Fibonacci sequence is that he did not invent the number sequence
+        with the Golden Ratio in mind. Instead he was calculating rabbit populations and just happened to invent another way to
+        calculate the Golden Ratio. This is usually how science works.
+    </p>
+
+    <div class="container">
+        <img class="imageright" src="assets/images/science/fibonacci/fibsquares1.png"
+             alt="Step-by-step diagram building Fibonacci squares (1,1,2,3,5,8,13 units) into a spiral rectangle"
+             style="max-width: 500px;">
+        <p>
+            There is another unintended consequence of Fibonacci's Sequence. Please get a piece of paper and pencil and follow along
+            with this simple experiment. We are going to follow the steps shown in the image right, starting at step A and finishing
+            at step E.
+        </p>
+        <ol type="A">
+            <li>Start by drawing two adjacent squares of some small size. We will call the size of each small square 1 unit.</li>
+            <li>On top of the two 1-unit squares, draw another square whose base is the same as the combined sizes of the two 1-unit squares. The new square will be 2 units.</li>
+            <li>To the left of the 1- and 2-unit squares, draw a square whose base equals the combined sizes of the 2-unit and 1-unit squares. The new square will be 3 units.</li>
+            <li>Below the 3-unit square, draw a square whose base equals the combined sizes of the 2-unit and 3-unit squares. The new square will be 5 units.</li>
+            <li>To the right of the 5-unit square, draw a square whose base equals the combined sizes of the 5-unit and 3-unit squares. The new square will be 8 units.</li>
+            <li>If you still have enough paper left, above the 8-unit square, draw a square whose base equals the combined sizes of the 8-unit and 5-unit squares. The new square will be 13 units.</li>
+        </ol>
+        <p>
+            You can see that we have drawn squares of the sizes: 1, 1, 2, 3, 5, 8, 13 — which are just the first 7 Fibonacci elements.
+            Notice that the size of each square is just the sum of the two previous squares. This is just the same Fibonacci algorithm
+            applied to drawing squares.
+            Notice that as we add more squares, overall the combined squares form a large rectangle. The large rectangle formed by
+            combining all the smaller squares would grow from 1&times;1, 2&times;1, 3&times;2, 5&times;3, 8&times;5, and 21&times;13.
+        </p>
+        <p>
+            The last rectangle formed in our drawing has a size of 21&times;13. Its ratio of the two sides is 1.615, a little short of the
+            Golden Ratio. But remember that we needed to go out to about the 15th Fibonacci number in order to get closer to the
+            Golden Ratio of <b>[1 + &radic;<span style="text-decoration:overline;">&nbsp;5&nbsp;</span>] / 2</b>.
+            We only had room to draw about 7 squares.
+        </p>
+        <p>
+            If we had enough space on the paper, we could draw more squares. Imagine for a moment that we were able to draw another
+            8 squares. That would give the last two squares sizes of 610 and 377 units. Their ratio, of course, is the Golden Ratio
+            of 1.618. The large rectangle formed by all the squares combined would be a Golden Rectangle.
+        </p>
+    </div>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/acropolis1.jpg"
+             alt="The Greek Parthenon with Fibonacci squares superimposed, illustrating the Golden Rectangle in its proportions"
+             style="max-width: 500px;">
+        <p>
+            Now that you know how to create Golden Rectangles out of Fibonacci numbers, have a look at the image on the left.
+            We see a picture of the Greek Parthenon. Superimposed over the image are the familiar Fibonacci squares. The Parthenon
+            is <a href="https://www.goldennumber.net/parthenon-phi-golden-ratio/" target="_blank">stuffed full of these kinds of references to the Golden Rectangle.</a>
+        </p>
+    </div>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/spiral2a.png"
+             alt="Fibonacci squares with red diagonal lines connecting the corners of each square" style="max-width: 400px;">
+        <img src="assets/images/science/fibonacci/spiral2b.png"
+             alt="The diagonals replaced with arcs, forming the Fibonacci Spiral" style="max-width: 400px;">
+    </div>
+
+    <p>
+        Let's return to the relationship of Fibonacci numbers and the squares that we generated before. This time, connect
+        all the diagonals (shown in red) of the squares as shown in the figure upper left. You can see that the diagonals
+        get longer for each larger square. Now if we replace the red diagonals with red arcs, we get a nice spiral
+        as seen in the upper right image. This
+        spiral is called the Fibonacci Spiral. You can recognize the construction of the spiral as the drawing on Sheldon's
+        shirt at the top of this article.
+    </p>
+
+    <div class="image-row">
+        <img src="assets/images/science/fibonacci/am1.png"
+             alt="Fossil ammonite — its chambered shell forms an approximation of the Fibonacci Spiral" style="max-width: 400px;">
+        <img src="assets/images/science/fibonacci/am2.png"
+             alt="Close-up of an ammonite cross-section showing the perfect spiral boundary between chambers" style="max-width: 400px;">
+    </div>
+
+    <p>
+        Sometimes nature imitates mathematics. The above two images show a fossil called an Ammonite. What really stands out in these
+        images is an approximation to the Fibonacci Spiral. What is amazing about the spiral in the Ammonites is that even
+        though each hollow chamber has irregular dimensions, the boundary that forms each layer of chambers is a perfect spiral.
+    </p>
+
+    <div class="container">
+        <img class="imageleft" src="assets/images/science/fibonacci/fibtrump1.jpg"
+             alt="A humorous application of the Fibonacci spiral"
+             style="max-width: 500px;">
+        <p>Sometimes mathematics imitates comedy.</p>
+    </div>
+
+</main>
+
+<footer>
+    &copy; Eli Guidera &mdash; Eli's Science Corner
+</footer>
+
+</body>
+</html>
