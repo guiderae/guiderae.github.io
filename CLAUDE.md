@@ -6,19 +6,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static HTML website for science articles written by Eli Guidera. Migrated from a Java/Spring MVC JSP application to plain static HTML + CSS, hosted on GitHub Pages. No build step — files are served directly.
 
+## Deployment
+
+Live at **https://guiderae.github.io** (GitHub Pages, repo `guiderae/guiderae.github.io`, branch `main`, root `/`).
+
 ## Article inventory
 
-Top-level articles (each gets its own `.html` file at the repo root):
+All articles migrated. Top-level files at the repo root:
 
-| HTML file | Title | Status |
-|---|---|---|
-| `index.html` | Science Articles (landing page) | Migrated |
-| `galaxiesArticle.html` | A Galaxy Far, Far Away | Migrated |
-| `cpuArticle.html` | How Does a Computer Execute a Program? | Not yet migrated |
-| `nuclearArticle.html` | Where Did All the Elements Come From? | Not yet migrated |
-| `airplanesFly.html` | How Do Airplanes Fly? | Not yet migrated |
-| `fibonacci.html` | The Fibonacci Sequence | Not yet migrated |
-| `climate.html` | Does Human Activity Affect Earth's Climate? | Not yet migrated |
+| HTML file | Title |
+|---|---|
+| `index.html` | Science Articles (landing page) |
+| `galaxiesArticle.html` | A Galaxy Far, Far Away |
+| `cpuArticle.html` | How Does a Computer Execute a Program? |
+| `nuclearArticle.html` | Where Did All the Elements Come From? |
+| `airplanesFly.html` | How Do Airplanes Fly? |
+| `fibonacci.html` | The Fibonacci Sequence |
+| `climate.html` | Does Human Activity Affect Earth's Climate? |
+| `relativityArticle.html` | Einstein's Theories of Relativity |
 
 Sub-pages linked from `nuclearArticle.html` (not listed on the landing page):
 
