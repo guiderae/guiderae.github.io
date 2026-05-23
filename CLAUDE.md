@@ -38,7 +38,7 @@ Sub-pages linked from `nuclearArticle.html` (not listed on the landing page):
 
 ## Theme and CSS
 
-The site uses an **editorial/magazine** theme (Merriweather serif body, Raleway sans-serif headings, dark navy `#1a2940` header). All styles live in `assets/css/articles.css`.
+The site uses an **editorial/magazine** theme (Merriweather serif body, Raleway sans-serif headings, light navy `#2b2ba1` header). All styles live in `assets/css/articles.css`.
 
 Key CSS classes:
 - `.site-header` / `.site-name` / `.site-tagline` — page header
