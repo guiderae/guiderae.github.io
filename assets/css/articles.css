@@ -134,6 +134,10 @@ li {
 
 /* ── Article index entries ──────────────────────────────────── */
 
+.article-list {
+    margin-top: 0.5rem;
+}
+
 .article-entry {
     padding: 2.25rem 0;
     overflow: hidden;
