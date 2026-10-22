@@ -1,0 +1,4 @@
+# The build scripts that generate this site from the source PDFs.
+# Maintainer tooling only — not part of the published site.
+/tools/
+__pycache__/
