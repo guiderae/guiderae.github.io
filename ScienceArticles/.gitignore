@@ -1,0 +1,11 @@
+# Leftovers from this site's old NetBeans / Java-Spring-JSP project,
+# kept locally for reference. Not part of the published site.
+/nbproject/private/
+/nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+ScienceArticlesJSP/

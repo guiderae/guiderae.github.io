@@ -1,0 +1,287 @@
+/* Rodin Discussions — complete, self-contained stylesheet.
+   This site does not reference guiderae.github.io's root Science Corner
+   stylesheet or any of its files; RodinDiscussions/ is its own website. */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Raleway:wght@400;600;700&display=swap');
+
+:root {
+    --navy:      #1a3b66;
+    --accent:    #b3541e;
+    --text:      #222;
+    --muted:     #555;
+    --rule:      #ddd;
+    --max-width: 860px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #fff;
+    color: var(--text);
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+
+.site-header {
+    background: var(--navy);
+    padding: 1.4rem 0;
+}
+
+.site-header .inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.site-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.site-name:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,0.85);
+}
+
+.site-tagline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ── Main content wrapper ───────────────────────────────────── */
+
+.content-wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2.75rem 2rem 4rem;
+}
+
+/* ── Page heading ───────────────────────────────────────────── */
+
+.page-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--navy);
+    padding-bottom: 0.65rem;
+    border-bottom: 2px solid var(--navy);
+    margin-bottom: 1.75rem;
+}
+
+/* ── Intro text ─────────────────────────────────────────────── */
+
+.intro {
+    margin-bottom: 2.75rem;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+
+p {
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2.5rem 0 0.85rem;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+h3,
+.subheader {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 1.75rem 0 0.6rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text);
+}
+
+/* nested bullet lists shouldn't inherit the full paragraph gap */
+li > ul {
+    margin: 0.35rem 0 0.5rem;
+}
+
+/* ── Back link (article pages) ──────────────────────────────── */
+
+.back-link {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.back-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+
+footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    margin-top: 2rem;
+}
+
+/* ── Date lines ─────────────────────────────────────────────── */
+
+.discussion-date,
+.entry-date {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.75rem;
+}
+
+.entry-date {
+    margin-bottom: 0.35rem;
+}
+
+/* ── Index entries ───────────────────────────────────────────── */
+
+.article-list {
+    margin-top: 0.5rem;
+}
+
+.discussion-entry {
+    padding: 1.9rem 0;
+}
+
+.discussion-entry h2 {
+    margin: 0 0 0.6rem;
+}
+
+.discussion-entry h2 a {
+    color: var(--accent);
+}
+
+.entry-links {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+hr.article-divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+}
+
+/* ── Table of contents ──────────────────────────────────────── */
+
+.toc {
+    background: #f7f8fa;
+    border-left: 4px solid var(--navy);
+    padding: 1rem 1.4rem;
+    margin: 0 0 2.25rem;
+}
+
+.toc h2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.toc li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+/* a long contents list reads better in two columns on a wide screen */
+@media (min-width: 700px) {
+    .toc ul.toc-wide {
+        columns: 2;
+        column-gap: 2.5rem;
+    }
+
+    .toc ul.toc-wide li {
+        break-inside: avoid;
+    }
+}
+
+/* ── Original-PDF link ──────────────────────────────────────── */
+
+.source-pdf {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--rule);
+    margin-top: 2.75rem;
+    padding-top: 1.1rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    .content-wrap {
+        padding: 1.75rem 1.25rem 3rem;
+    }
+}

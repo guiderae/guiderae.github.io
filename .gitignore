@@ -1,12 +1,6 @@
-
-# NetBeans specific files
-/nbproject/private/
-/nbproject/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+# This repo hosts several independent static sites as sibling folders
+# (see CLAUDE.md). Keep repo-wide, generic ignores here; anything specific
+# to one site's own local tooling belongs in that site's own .gitignore.
 
 # Operating System files
 .DS_Store
@@ -17,5 +11,3 @@ ehthumbs.db
 *.bak
 *.tmp
 *.swp
-
-ScienceArticlesJSP/
