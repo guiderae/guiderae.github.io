@@ -11,3 +11,6 @@ ehthumbs.db
 *.bak
 *.tmp
 *.swp
+
+# Local scratch/experiments — not part of either published site
+galleryemail1.html
